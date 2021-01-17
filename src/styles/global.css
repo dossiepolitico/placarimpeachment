@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~@fontsource/raleway/index.css";
+@import "~@fontsource/raleway/700.css";
 
 body {
     font-family: 'Raleway';

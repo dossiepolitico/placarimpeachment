@@ -25,15 +25,16 @@ export const pageQuery = graphql`
 `;
 
 export default class IndexPage extends React.Component<IndexPageProps> {
-    readonly hello = `Hello`;
     public render() {
         const { siteName } = this.props.data.site.siteMetadata;
         return (
             <Layout>
-                <h1 className="text-red-300 text-3xl">{this.hello} TypeScript world!</h1>
-                <p>
-                    This site is named <strong>{siteName}</strong>
-                </p>
+                <div className="px-2">
+                    <h1 className="text-3xl">{this.hello} TypeScript world!</h1>
+                    <p>
+                        This site is named <strong>{siteName}</strong>
+                    </p>
+                </div>
             </Layout>
         );
     }
