@@ -26,6 +26,9 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+
+      yellowdossie: '#FAFF00',
+      greendossie: '#08A117',
     },
     spacing: {
       px: '1px',
