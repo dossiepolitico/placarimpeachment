@@ -1,9 +1,9 @@
 import * as React from 'react';
-import Header from './header';
+import Nav from './nav';
 
 const MainLayout: React.FC = ({ children }) => (
     <div>
-        <Header />
+        <Nav />
         {children}
     </div>
 );

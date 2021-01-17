@@ -29,8 +29,8 @@ export default class IndexPage extends React.Component<IndexPageProps> {
         const { siteName } = this.props.data.site.siteMetadata;
         return (
             <Layout>
-                <div className="px-2">
-                    <h1 className="text-3xl">{this.hello} TypeScript world!</h1>
+                <div className="px-2 pt-5">
+                    <h1 className="text-4xl uppercase font-bold mb-5">Placar do Impeachment</h1>
                     <p>
                         This site is named <strong>{siteName}</strong>
                     </p>
