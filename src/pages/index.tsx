@@ -1,6 +1,7 @@
 import { graphql, PageProps } from 'gatsby';
 import * as React from 'react';
 import Layout from '../components/layout';
+import Progress from '../components/progress'
 
 // Please note that you can use https://github.com/dotansimha/graphql-code-generator
 // to generate all types from graphQL schema
@@ -31,10 +32,8 @@ export default class IndexPage extends React.Component<IndexPageProps> {
             <Layout>
                 <div className="px-2 pt-5">
                     <h1 className="text-4xl uppercase font-bold mb-5">Placar do Impeachment</h1>
-                    <p>
-                        This site is named <strong>{siteName}</strong>
-                    </p>
                 </div>
+                <Progress favor={25} contrary={25} abstention={25} unknown={25} />
             </Layout>
         );
     }
